@@ -1,0 +1,23 @@
+[
+    {
+        "caption": "Edit",
+        "mnemonic": "E",
+        "id": "edit",
+        "children":
+        [
+            {
+                "caption": "Wrap",
+                "id": "wrap",
+                "children":
+                [
+                    { "command": "wrap_lines_justified", "caption": "Wrap Paragraph Justified at Ruler" },
+                    // { "command": "wrap_lines_justified", "args": {"width": 70}, "caption": "Wrap paragraph justified at 70 characters" },
+                    // { "command": "wrap_lines_justified", "args": {"width": 78}, "caption": "Wrap paragraph justified at 78 characters" },
+                    // { "command": "wrap_lines_justified", "args": {"width": 80}, "caption": "Wrap paragraph justified at 80 characters" },
+                    // { "command": "wrap_lines_justified", "args": {"width": 100}, "caption": "Wrap paragraph justified at 100 characters" },
+                    // { "command": "wrap_lines_justified", "args": {"width": 120}, "caption": "Wrap paragraph justified at 120 characters" }
+                ]
+            },
+        ]
+    }
+]

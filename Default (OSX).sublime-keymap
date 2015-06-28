@@ -1,0 +1,3 @@
+[
+    { "keys": ["super+alt+shift+q"], "command": "wrap_lines_justified" }
+]
