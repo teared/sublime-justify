@@ -10,11 +10,7 @@ class TextWrapper(textwrap.TextWrapper):
 
     A new instance attributes controls the justification:
       justify (default: True)
-        Toggles justification.
-
-      random_spacing (default: True)
-        If  True,  each  results can be different, but spacing distribution is
-        more  uniform.  If  False,  a  new spaces always adding from the left.
+        Toggles justification on and off.
 
       justify_last (default: 'left')
         Offers  four justification  options:  'left',  'right',  'center'  and
@@ -22,17 +18,21 @@ class TextWrapper(textwrap.TextWrapper):
         flushed  left, flushed right, centered or fully justified (spread over
                                                       the whole column width).
 
+      random_spacing (default: True)
+        If  True,  each  results can be different, but spacing distribution is
+        more  uniform.  If  False,  a  new spaces always adding from the left.
+
       justify_indent (default: False)
         Enables spacing  between  text  and indent sequences.  Useful to avoid
         justification between  languages  comments  syntax  prefixes  and  the
         comments itself.
 
     '''
-    def __init__(self, justify=True, random_spacing=True, justify_last='left', justify_indent=False, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, *args, justify=True, justify_last='left', random_spacing=True, justify_indent=False, **kwargs):
+        super().__init__(*args, **kwargs)
         self.justify = justify
-        self.random_spacing = random_spacing
         self.justify_last = justify_last
+        self.random_spacing = random_spacing
         self.justify_indent = justify_indent
 
     def _distribute(self, num, len):

@@ -1,13 +1,15 @@
 import re
-
 import sublime
 import sublime_plugin
 from Default.paragraph import *
-from . import jtextwrap
+from . import jtextwrap as textwrap
 
 class WrapLinesJustifiedCommand(WrapLinesCommand):
+    ''' Same as parent, except using jtextwrap. '''
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
     def run(self, edit, width=0):
-        ''' The same as parent function, except using jtextwrap. '''
         if width == 0 and self.view.settings().get("wrap_width"):
             try:
                 width = int(self.view.settings().get("wrap_width"))
@@ -50,7 +52,7 @@ class WrapLinesJustifiedCommand(WrapLinesCommand):
             # cursor within the paragraph: hence why the paragraph is selected
             # at the end.
             for s in self.view.sel():
-                wrapper = jtextwrap.TextWrapper()
+                wrapper = textwrap.TextWrapper()
                 wrapper.expand_tabs = False
                 wrapper.width = width
                 prefix = self.extract_prefix(s)
