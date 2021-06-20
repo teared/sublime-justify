@@ -1,14 +1,20 @@
-### Justify Text
+# Justify
 
-Adds `Wrap Paragraph Justified at Ruler` command having the same functionality
-and  flaws of the standard "ragged"  wrap commands. Generally considered as  a
-bad style, justification may be useful in some rare situations. Accessible via
-`Edit/Wrap` menu or with `Alt+Shift+Q` shortcut.
+Adds the `Wrap Paragraph Justified  at Ruler` command, similar to the standard
+`Wrap Paragraph at Ruler`, except that the output is "justified" in monospaced
+font by adding extra spaces between words.
 
 ![alt tag](http://i.imgur.com/tVlCcZ3.gif)
 
 
-#### License
+## Usage
+
+*Edit → Wrap → Wrap Paragraph Justified at Ruler*
+
+Shortcut: `Alt+Shift+Q`
+
+
+## License
 
 This is free and unencumbered software released into the public domain.
 
