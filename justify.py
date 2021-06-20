@@ -2,6 +2,7 @@ import re
 import sublime
 import sublime_plugin
 from Default.paragraph import *
+from Default.paragraph import OldWrapLinesCommand as WrapLinesCommand
 from . import jtextwrap as textwrap
 
 class WrapLinesJustifiedCommand(WrapLinesCommand):
