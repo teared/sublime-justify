@@ -1,17 +1,23 @@
 # Justify
 
-Adds the `Wrap Paragraph Justified  at Ruler` command, similar to the standard
-`Wrap Paragraph at Ruler`, except that the output is "justified" in monospaced
-font by adding extra spaces between words.
+Adds the `Wrap Paragraph Justified at Ruler` command,  similar to the standard
+`Wrap Paragraph at Ruler`, but the  text is "justified" in monospaced  font by
+adding extra spaces between words.
 
 ![alt tag](http://i.imgur.com/tVlCcZ3.gif)
 
 
 ## Usage
 
-*Edit → Wrap → Wrap Paragraph Justified at Ruler*
+Multiple ways:
 
-Shortcut: `Alt+Shift+Q`
+1. Edit menu: *Edit → Wrap → Wrap Paragraph Justified at Ruler*
+
+1. Tools menu: *Tools → Command Palette → Wrap Paragraph Justified at Ruler*
+
+1. Command Palette: *`Ctrl+Shift+P` → Wrap Paragraph Justified at Ruler*
+
+1. Shortcut: `Alt+Shift+Q`
 
 
 ## License
